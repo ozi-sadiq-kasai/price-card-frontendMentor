@@ -1,0 +1,145 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    max-width: 1440px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+ }
+ .container{
+    padding: 20px 30px;
+ }
+main{
+    width:47%;
+   
+}
+.top-section{
+    background-color:white ;
+    border-top-left-radius:7px;
+    border-top-right-radius:7px;
+   
+}
+.top-section h1{
+    font-weight: 400;
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 20px;
+}
+.top-section h4{
+    color:  hsl(71, 92%, 58%);
+    padding-bottom: 20px;
+}
+.top-section p{
+    color: hsl(218, 22%, 67%);
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+/* bottom */
+.bottom{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.bottom-left{
+background-color: rgb(73,190,189);
+width: 50%;
+border-bottom-right-radius:7px;
+}
+.bottom-left h4,.bottom-right h4{
+    color: hsl(204, 43%, 93%);
+    padding-bottom: 20px;
+}
+
+.bottom-left p{
+     width: 80%;
+     padding-bottom: 20px;  
+     color: hsl(203, 26%, 83%);
+     font-size: 15px;
+     line-height:1.5;
+}
+
+.bottom-right{
+    background-color:rgb(43,180,177);
+    width: 50%;
+    border-bottom-left-radius:7px;
+    }
+
+.bottom-right .pricing{
+    display: flex;
+}
+
+ .bottom-right .amount{
+    color: hsl(204, 43%, 93%);
+    font-weight: 700;
+    font-size: 1.9rem;
+} 
+
+.bottom-right .monthly{
+    color:hsl(203, 20%, 77%);
+   font-size: 0.8rem;
+   padding-left: 10px;
+    align-self: center;
+    
+} 
+
+.bottom-right .daily{
+    color: hsl(204, 43%, 93%); 
+    padding-top: 15px; 
+}
+
+
+button{
+    width: 100%;
+    padding: 13px;
+    margin: 30px 0;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 5px;
+    color: hsl(204, 43%, 93%); 
+    
+}
+
+
+@media only screen and (max-width: 375px){
+    body{
+        max-width: 375px;
+     }
+
+     main{
+        width:90%
+    }
+
+    .bottom{
+        display: flex;
+        flex-direction: column-reverse;  
+    }
+
+    .bottom-left{
+        background-color: hsl(179, 59%, 49%);
+        width: 100%;
+        border-bottom-right-radius:0;
+        }
+
+    .bottom-right{
+        background-color: hsl(179, 62%, 43%);
+        width: 100%;
+        border-bottom-left-radius:0;
+    }
+    .top-section{
+        border-top-left-radius:0;
+        border-top-right-radius:0;
+       
+    }
+}
+    
